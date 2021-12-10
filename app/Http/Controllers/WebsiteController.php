@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 use App\Models\Booking;
+use App\Models\File;
 use App\Models\BoardingHouse;
 use App\Models\Customer;
 use Illuminate\Http\Request;
@@ -27,7 +28,8 @@ class WebsiteController extends Controller
     public function detailPage($id)
     {
         $room = Room::findOrFail($id);
-        return view('website.room_detail', compact('room'));
+        $images = File::getImageByRoom($room->id);
+        return view('website.room_detail', compact('room', 'images'));
     }
 
     public function bookingForm($id)
