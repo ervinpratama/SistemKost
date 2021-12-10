@@ -30,7 +30,7 @@
                 <div class="position-relative ms-md-5 me-md-n5">
                     <div class="blur-shadow-image">
                         <img class="image-left rounded-3 img-fluid position-relative top-0 end-0 bg-cover"
-                            src="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2020/12/07/3742949463.jpg"
+                            src="{{ asset($images->get(0)->path) }}"
                             alt="image">
                     </div>
                     <div class="colored-shadow"
@@ -48,7 +48,7 @@
                 <div class="position-absolute bottom-0 mb-5 ms-n2 me-3 start-0 end-2 d-md-block d-none">
                     <div class="blur-shadow-image">
                         <img class="image-container rounded-3 img-fluid position-relative bg-cover"
-                            src="https://djuragan.sgp1.digitaloceanspaces.com/djurkam/local/images/lodgings/5ec4bb37c2f69.jpg"
+                            src="{{ asset($images->get(2)->path) }}"
                             alt="image">
                     </div>
                     <div class="colored-shadow"
@@ -61,7 +61,7 @@
                 <div class="position-relative ms-n4 mb-5 mt-8 d-md-block d-none">
                     <div class="blur-shadow-image">
                         <img class="image-right rounded-3 img-fluid position-relative bg-cover"
-                            src="https://www.kostjakarta.net/uploads/2021/09/789928-380x260.jpeg"
+                            src="{{ asset($images->get(1)->path) }}"
                             alt="image">
                     </div>
                     <div class="colored-shadow"
